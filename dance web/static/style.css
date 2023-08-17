@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing Script");
+*{
+    /*for making reduce space at top and bottom */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script';
+    font-weight: bolder;
+    font-size:24px ;
+    
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(59, 58, 61);
+}
+#navbar li{
+    list-style: none;
+    padding: 15px 12px;
+}
+#navbar li a{
+    text-decoration: none;
+    color: rgb(255,255,255);
+   padding: 13px 30px;
+}
+#navu :hover{
+    color: black;
+}
+#intro{
+    padding-bottom: 20%;
+    color: white;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 7, 7);
+    background: url("https://cdn.pixabay.com/photo/2023/05/02/07/06/hd-wallpaper-7964515_1280.png") center/cover no-repeat;
+}
+#intro div.small{
+    margin: 20px;
+    font-size: 15px;
+}
+#mis div.m{
+    height: 400px;
+    background-color: antiquewhite;
+    border: 2pt solid black;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin:20px;
+    position: relative;
+    border-radius: 15px;
+
+}
+#coder{
+    border-radius: 20px;
+}
+#linux{
+    position:absolute;
+    top: 95px;
+    left:30px;
+    border-radius: 20px;
+}
+
+#network{
+    position: absolute;
+    top:95px;
+    right: 30px;
+    image-orientation: initial;
+    border-radius: 20px;
+}
+
+#spon{
+    height: 800px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    background: url("https://cdn.pixabay.com/photo/2014/12/27/16/38/planet-581239_1280.jpg") center/cover no-repeat;
+
+}
+#sp{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+#kal{
+    
+    border-radius: 30px;
+}
+#ja{
+    opacity: 0.8;
+    border-radius: 30px;
+}
+#sh{
+    opacity: 0.9;
+    border-radius: 30px;
+}
+#footer{
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    background-color: grey;
+}

@@ -1,0 +1,33 @@
+//Inserting into mongo db
+//all data in mongos will be in the format of DBSON.
+//create db 
+use some_name(database)
+
+//inserting single data into db use single object
+db.items.insertOne({name:"phone",price:20000,rating:4.9,quant:10})
+
+//inserting many data : use array of items
+db.items.insertMany([{name:"phone",price:20000,rating:4.9,quant:10},{name:"pen",price:20,rating:4.3,quant:100},{name:"laptop",price:40000,rating:4.8,quant:13}])
+
+//finding all existing items
+db.items.find()
+
+!!NOTE : in mongo db no requirement of schemas like sql.
+
+//quering the db
+db.items.find({rat:4.5}) //where rate is object in our db.
+
+//another example with comparisions operator
+db.items.find({rat:{$gte: 4.5}})
+
+//use and operation with above example
+db.items.find({rat:{$gte: 4.5}, price:{$lt: 2000})
+
+//or operation
+db.items.find({$or:[{ rating:{$gte: 4.5}}, {price:{$lt: 2000}}]})
+
+//find with three parameters returns the only required result.
+db.items.find({rating:{$gte: 4.5}}, {rating:1})
+
+//deleting db
+db.items.deleteOne()

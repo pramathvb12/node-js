@@ -1,0 +1,53 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul#navu 
+            li #[a(href="#") Home] 
+            li #[a(href="#") About] 
+            li #[a(href="#") Service] 
+            li #[a(href="#") Info]
+        
+    section#intro 
+        div Welcome to my blog page 
+        div.small Please follow my blogs any supports
+        //- |Welcome to my blog page 
+        //- br
+        //- br
+        //- br
+        //- |Please follow my blogs any supports
+    section#mis 
+        div.m 
+            h4#h Have Any Query related to follwing
+            br
+            br
+            |Any Doubts about linux?
+            br
+            br
+            |Any Doubts on networking?
+            br
+            br
+            |Any quires related to programming.
+            br
+            img(id="coder" src="https://www.freecodecamp.org/news/content/images/2022/12/main-image.png", alt="code" height="300px" width="300px")
+            img(id="linux" src="https://pimylifeup.com/wp-content/uploads/2022/04/kill-command-on-linux-Thumbnail-NoWM.png", alt="lin"  height="300px" width="300px")
+            img(id="network" src="https://media.geeksforgeeks.org/wp-content/uploads/20230406152358/CN-(1).jpg", alt="net" height="300px" width="300px")
+    
+    section#spon 
+        h3 Our Supporters 
+        br
+        br
+        div#sp
+            img(src="https://freepngimg.com/thumb/microsoft/28386-6-microsoft-logo-transparent-image-thumb.png", alt="micro")
+            img(src="https://freepngimg.com/thumb/ibm/67917-logo-ibm-free-hd-image.png", alt="ibm" height="200px" width="200px")
+            img(id="kal" src="https://moonbeam.network/wp-content/uploads/2020/12/truffle-500.png", alt="kali" height="200px" width="200px")
+            img(id="ja" src="https://cdn.freebiesupply.com/logos/thumbs/2x/nodejs-1-logo.png", alt="java"  height="200px" width="200px" )
+            img(id="sh" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Apache_Software_Foundation_Logo_%282016%29.svg/2560px-Apache_Software_Foundation_Logo_%282016%29.svg.png", alt="shell" height="200px" width="200px" )
+    footer#footer 
+        |2023 All copy rights
+    script
+      include ../static/index.js

@@ -1,0 +1,20 @@
+extends base.pug
+
+block scripts
+    script(src='../static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+        include ../static/constyle.css
+
+block content
+    div.container
+        h3 Contact us
+        form(action="/info", method="post", class="myform" )
+            input(type="text" , name="name" , placeholder="Enter your name", class="MyInput")
+            input(type="text" , name="name" , placeholder="Enter your gender", class="MyInput") 
+            input(type="number" , name="name" , placeholder="Enter your age", class="MyInput") 
+            input(type="phone" , name="name" , placeholder="Enter your phone", class="MyInput") 
+            button(class="btn")
+                |Sumbit   
